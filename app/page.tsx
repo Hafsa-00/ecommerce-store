@@ -3,7 +3,10 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import Hero from "./components/herosec";
-import AboutUs from "./components/aboutus";
+import FoodCategory from "./components/foodcategry";
+import MeetShef from "./components/meetshef";
+import MenuCom from "./components/menuitems";
+
 
 export default function Home() {
   return (
@@ -11,8 +14,9 @@ export default function Home() {
       <Header/>
       <Navbar/>
       <Hero/>
-      <AboutUs/>
-      {/* <Food_carigery/>  */}
+      <FoodCategory/>
+      <MenuCom/>
+      <MeetShef/>
       <Footer/>
 
     </div>
