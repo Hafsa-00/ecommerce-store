@@ -1,117 +1,222 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-export default function Footer() {
+import footerpic1 from "../../public/images/brost.png";
+import footerpic2 from "../../public/images/meat-dish.png";
+import footerpic3 from "../../public/images/aalo-roll.png";
+
+
+
+import { PiClockClockwiseBold } from "react-icons/pi";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaPinterest } from "react-icons/fa";
+
+
+
+
+const Footer = () => {
   return (
-    <div>
-      <footer className="bg-gray-900 px-4 sm:px-6 pt-12 pb-6 font-[sans-serif]">
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        <div className="space-y-4">
-          <h6 className="text-sm text-white font-medium">RESOURCES</h6>
-          <ul className="space-y-2.5">
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Graphic Design Tools</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Video Editing Tools</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Image Enhancer</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Remove Backgrounds</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Photo Enhancement</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Explore All Tools</a></li>
-          </ul>
+    <footer className="bg-white dark:bg-black">
+
+        <div className="flex flex-col md:flex-row justify-between items-center bg-black px-[135px] py-[50px]">
+          <div className="text-white md:w-[50%] w-[100%]">
+              <h2 className="text-[20px] md:text-[32px] font-semibold"><span className="text-[#FF9F0D]">St</span>ill Need Our Support</h2>
+              <p className="text-[10px] md:text-[16px] font-normal mt-[17px]">Don&#39;t wait make a smart & logical quote here. Its pretty easy.</p>
+          </div>
+
+          <div className="flex md:mt-0 mt-[20px]">
+            <input type="text" placeholder="Enter Your Email"
+              className="bg-[#FF9F0D] text-white py-[5px] px-[10px] md:py-[10px] md:px-[20px] mr-2"
+            />
+            <button className="text-[#FF9F0D] bg-white py-[5px] md:py-[10px] px-[10px] md:px-[20px]">Subscribe Now</button>
+          </div>
+
+          
         </div>
 
-        <div className="space-y-4">
-          <h6 className="text-sm text-white font-medium">HELPFUL LINKS</h6>
-          <ul className="space-y-2.5">
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Subscription Plans</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Our Story</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Developer API</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Career Opportunities</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Become a Contributor</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Brand Guidelines</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Upcoming Events</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Search Insights</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Latest Articles</a></li>
-          </ul>
-        </div>
+          <hr className="my-4 border-[#FF9F0D] mx-[135px]" />
 
-        <div className="space-y-4">
-          <h6 className="text-sm text-white font-medium">POLICIES</h6>
-          <ul className="space-y-2.5">
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Terms & Conditions</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">User Agreement</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Data Privacy Policy</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Copyright Notice</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Cookie Usage Policy</a></li>
-            <li><a href="javascript:void(0)" className="text-[13px] text-gray-400 hover:text-white">Manage Cookies</a></li>
-          </ul>
-        </div>
+      <div className="mx-auto w-full max-w-screen-xl ">
+        <div className="grid grid-cols-2  md:gap-[50px] px-0 md:px-[135px] py-6 lg:py-8 md:grid-cols-4">
+          <div>
+            <h2 className="mb-6 text-[24px] font-semibold  uppercase dark:text-white">
+              About Us
+            </h2>
+            <ul className="text-gray-500  font-medium">
+              <li className="mb-4">
+                <p className="text-[#FFFFFF] text-[16px] font-normal hover:underline">
+                  orporate clients and leisure travelers has been relying on
+                  Groundlink for dependab safe, and professional chauffeured car
+                  service in major cities across World.
+                </p>
+              </li>
+              <li className="flex gap-[16.5px]">
+                <div className="bg-[#FF9F0D] flex justify-center items-center w-[72px] h-[72px]">
+                  <PiClockClockwiseBold className="text-white text-[40px]" />
+                </div>
 
+                <div className="ml-1">
+                  <h2 className="text-[16px] text-[#FFFFFF] font-normal">
+                    Opening Houres
+                  </h2>
+                  <h3 className="text-[10px] font-normal text-[#FFFFFF]">
+                    Mon - Sat(8.00 - 6.00)
+                  </h3>
+                  <h3 className="text-[10px] font-normal text-[#FFFFFF]">
+                    Sunday - Closed
+                  </h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div className="">
+            <h2 className="mb-6 text-[24px] font-semibold  uppercase dark:text-white">
+            Useful Links
+            </h2>
+            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  About
+                </a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  News
+                </a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  Partner
+                </a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  Team 
+                </a>
+              </li>
 
-        <div className="space-y-4">
-          <h6 className="text-sm text-white font-medium">SOCIAL MEDIA</h6>
-          <ul className="flex space-x-4">
-            <li>
-              <a href='javascript:void(0)'>
-                <svg xmlns="http://www.w3.org/2000/svg" className="fill-blue-600 w-8 h-8" viewBox="0 0 49.652 49.652">
-                  <path d="M24.826 0C11.137 0 0 11.137 0 24.826c0 13.688 11.137 24.826 24.826 24.826 13.688 0 24.826-11.138 24.826-24.826C49.652 11.137 38.516 0 24.826 0zM31 25.7h-4.039v14.396h-5.985V25.7h-2.845v-5.088h2.845v-3.291c0-2.357 1.12-6.04 6.04-6.04l4.435.017v4.939h-3.219c-.524 0-1.269.262-1.269 1.386v2.99h4.56z" data-original="#000000" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href='javascript:void(0)'>
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" viewBox="0 0 112.196 112.196">
-                  <circle cx="56.098" cy="56.097" r="56.098" fill="#007ab9" data-original="#007ab9" />
-                  <path fill="#fff" d="M89.616 60.611v23.128H76.207V62.161c0-5.418-1.936-9.118-6.791-9.118-3.705 0-5.906 2.491-6.878 4.903-.353.862-.444 2.059-.444 3.268v22.524h-13.41s.18-36.546 0-40.329h13.411v5.715c-.027.045-.065.089-.089.132h.089v-.132c1.782-2.742 4.96-6.662 12.085-6.662 8.822 0 15.436 5.764 15.436 18.149zm-54.96-36.642c-4.587 0-7.588 3.011-7.588 6.967 0 3.872 2.914 6.97 7.412 6.97h.087c4.677 0 7.585-3.098 7.585-6.97-.089-3.956-2.908-6.967-7.496-6.967zm-6.791 59.77H41.27v-40.33H27.865v40.33z" data-original="#f1f2f2" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href='javascript:void(0)'>
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" viewBox="0 0 152 152">
-                  <linearGradient id="a" x1="22.26" x2="129.74" y1="22.26" y2="129.74" gradientUnits="userSpaceOnUse">
-                    <stop offset="0" stop-color="#fae100" />
-                    <stop offset=".15" stop-color="#fcb720" />
-                    <stop offset=".3" stop-color="#ff7950" />
-                    <stop offset=".5" stop-color="#ff1c74" />
-                    <stop offset="1" stop-color="#6c1cd1" />
-                  </linearGradient>
-                  <g data-name="Layer 2">
-                    <g data-name="03.Instagram">
-                      <rect width="152" height="152" fill="url(#a)" data-original="url(#a)" rx="76" />
-                      <g fill="#fff">
-                        <path fill="#ffffff10" d="M133.2 26c-11.08 20.34-26.75 41.32-46.33 60.9S46.31 122.12 26 133.2q-1.91-1.66-3.71-3.46A76 76 0 1 1 129.74 22.26q1.8 1.8 3.46 3.74z" data-original="#ffffff10" />
-                        <path d="M94 36H58a22 22 0 0 0-22 22v36a22 22 0 0 0 22 22h36a22 22 0 0 0 22-22V58a22 22 0 0 0-22-22zm15 54.84A18.16 18.16 0 0 1 90.84 109H61.16A18.16 18.16 0 0 1 43 90.84V61.16A18.16 18.16 0 0 1 61.16 43h29.68A18.16 18.16 0 0 1 109 61.16z" data-original="#ffffff" />
-                        <path d="m90.59 61.56-.19-.19-.16-.16A20.16 20.16 0 0 0 76 55.33 20.52 20.52 0 0 0 55.62 76a20.75 20.75 0 0 0 6 14.61 20.19 20.19 0 0 0 14.42 6 20.73 20.73 0 0 0 14.55-35.05zM76 89.56A13.56 13.56 0 1 1 89.37 76 13.46 13.46 0 0 1 76 89.56zm26.43-35.18a4.88 4.88 0 0 1-4.85 4.92 4.81 4.81 0 0 1-3.42-1.43 4.93 4.93 0 0 1 3.43-8.39 4.82 4.82 0 0 1 3.09 1.12l.1.1a3.05 3.05 0 0 1 .44.44l.11.12a4.92 4.92 0 0 1 1.1 3.12z" data-original="#ffffff" />
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href='javascript:void(0)'>
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" viewBox="0 0 1227 1227">
-                  <path d="M613.5 0C274.685 0 0 274.685 0 613.5S274.685 1227 613.5 1227 1227 952.315 1227 613.5 952.315 0 613.5 0z" data-original="#000000" />
-                  <path fill="#fff" d="m680.617 557.98 262.632-305.288h-62.235L652.97 517.77 470.833 252.692H260.759l275.427 400.844-275.427 320.142h62.239l240.82-279.931 192.35 279.931h210.074L680.601 557.98zM345.423 299.545h95.595l440.024 629.411h-95.595z" data-original="#ffffff" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <div className="!mt-8">
-            <h6 className="text-[13px] text-gray-400 font-medium">Get exclusive assets sent straight to your inbox</h6>
-            <div className="mt-4">
-              <a href="javascript:void(0)" className="bg-blue-600 hover:bg-blue-700 text-sm text-white font-medium py-3 px-6 tracking-wide rounded">Sign up</a>
-            </div>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                Menu
+                </a>
+              </li> 
+
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                Contact
+                </a>
+              </li> 
+            </ul>
+          </div>
+          <div className="mt-10 md:mt-0">
+            <h2 className="mb-6 text-[24px] font-semibold  uppercase dark:text-white">
+            Help?
+            </h2>
+            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  FAQ
+                </a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                Term & conditions
+                </a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                Reporting
+                </a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                Documentation 
+                </a>
+              </li>
+
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                Support Policy
+                </a>
+              </li> 
+
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                Privacy
+                </a>
+              </li> 
+            </ul>
+          </div>
+          <div className="mt-10 md:mt-0">
+            <h2 className="mb-6 text-[24px] font-semibold  uppercase dark:text-white">
+              Recent Post
+            </h2>
+            <ul className="text-gray-500 dark:text-gray-400 font-medium gap-[14px]">
+              <li className="flex gap-[16.5px]">
+                <Image src={footerpic1} alt="Fod" />
+
+                <div className="ml-1">
+                  <h2 className="text-[12px] text-[#FFFFFF] font-normal">
+                    20 Feb 2022
+                  </h2>
+                  <h3 className="text-[14px] font-normal text-[#FFFFFF]">
+                    Keep Your Business
+                  </h3>
+                </div>
+              </li>
+
+              <li className="flex gap-[16.5px] mt-[14px]">
+                <Image src={footerpic2} alt="Fod" />
+
+                <div className="ml-1">
+                  <h2 className="text-[12px] text-[#FFFFFF] font-normal">
+                    20 Feb 2022
+                  </h2>
+                  <h3 className="text-[14px] font-normal text-[#FFFFFF]">
+                    Keep Your Business
+                  </h3>
+                </div>
+              </li>
+
+              <li className="flex gap-[16.5px] mt-[14px]">
+                <Image src={footerpic3} alt="Fod" />
+
+                <div className="ml-1">
+                  <h2 className="text-[12px] text-[#FFFFFF] font-normal">
+                    20 Feb 2022
+                  </h2>
+                  <h3 className="text-[14px] font-normal text-[#FFFFFF]">
+                    Keep Your Business
+                  </h3>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+        </div>
+        <div className="w-[100%] px-4 py-6 bg-gray-100 dark:bg-[#4F4F4F] md:flex md:items-center md:justify-around ">
+          <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
+            © 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights
+            Reserved.
+          </span>
 
-      <hr className="my-6 border-gray-600" />
-
-      <div className="max-w-screen-xl mx-auto text-center">
-        <p className="text-gray-400 text-[13px]">
-          ReadymadeUI Copyright © 2024. All rights reserved.
-        </p>
-      </div>
+          <div className="flex justify-center gap-[14px]">
+            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><FaFacebookF /></div>
+            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><FaTwitter /></div>
+            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><FaInstagram /></div>
+            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><FaYoutube /></div>
+            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><FaPinterest /></div>
+          </div>
+         
+        </div>
+      
     </footer>
-    </div>
-  )
-}
+  );
+};
+
+export default Footer;
+
