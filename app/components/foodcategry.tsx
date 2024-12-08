@@ -4,10 +4,10 @@ import Image from 'next/image'
 const FoodCategory = () => {
   // Items array containing food details
   const items = [
-    { id: 1, img: "../../public/images/catgy1.png", label: "Save 50% on Fast Food" },
-    { id: 2, img: "../../public/images/catgy2.png", label: "Delicious Burgers" },
-    { id: 3, img: "../../public/images/catgy3.png", label: "Healthy Salads" },
-    { id: 4, img: "../../public/images/catgy4.png", label: "Desserts" },
+    { id: 1, img: "/images/catgy1.png", label: "Save 50% on Fast Food" },
+    { id: 2, img: "/images/catgy2.png", label: "Delicious Burgers" },
+    { id: 3, img: "/images/catgy3.png", label: "Healthy Salads" },
+    { id: 4, img: "/images/catgy4.png", label: "Desserts" },
   ];
 
   return (
