@@ -23,22 +23,22 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center justify-between flex-1 ml-8">
           {/* Navigation Links */}
           <div className="flex space-x-6">
-            <a href="#home" className="hover:text-orange-500 transition">
+            <a href="/" className="hover:text-orange-500 transition">
               Home
             </a>
-            <a href="#menu" className="hover:text-orange-500 transition">
+            <a href="app/4-menu/page.tsx" className="hover:text-orange-500 transition">
               Menu
             </a>
-            <a href="#blog" className="hover:text-orange-500 transition">
+            <a href="app/8-blogpage/page.tsx" className="hover:text-orange-500 transition">
               Blog
             </a>
-            <a href="#pages" className="hover:text-orange-500 transition">
+            <a href="app/12-checkoutpages/page.tsx" className="hover:text-orange-500 transition">
               Pages
             </a>
-            <a href="#about" className="hover:text-orange-500 transition">
+            <a href="app/10-aboutuspage/page.tsx" className="hover:text-orange-500 transition">
               About
             </a>
-            <a href="#shop" className="hover:text-orange-500 transition">
+            <a href="app/5-shoplist/page.tsx" className="hover:text-orange-500 transition">
               Shop
             </a>
             <a href="#contact" className="hover:text-orange-500 transition">
@@ -76,27 +76,27 @@ export default function Navbar() {
       >
         {/* Navigation Links */}
         <div className="flex flex-col space-y-4">
-          <a href="#home" className="hover:text-orange-500 transition">
-            Home
-          </a>
-          <a href="#menu" className="hover:text-orange-500 transition">
-            Menu
-          </a>
-          <a href="#blog" className="hover:text-orange-500 transition">
-            Blog
-          </a>
-          <a href="#pages" className="hover:text-orange-500 transition">
-            Pages
-          </a>
-          <a href="#about" className="hover:text-orange-500 transition">
-            About
-          </a>
-          <a href="#shop" className="hover:text-orange-500 transition">
-            Shop
-          </a>
-          <a href="#contact" className="hover:text-orange-500 transition">
-            Contact
-          </a>
+        <a href="/" className="hover:text-orange-500 transition">
+              Home
+            </a>
+            <a href="app/4-menu/page.tsx" className="hover:text-orange-500 transition">
+              Menu
+            </a>
+            <a href="app/8-blogpage/page.tsx" className="hover:text-orange-500 transition">
+              Blog
+            </a>
+            <a href="app/12-checkoutpages/page.tsx" className="hover:text-orange-500 transition">
+              Pages
+            </a>
+            <a href="app/10-aboutuspage/page.tsx" className="hover:text-orange-500 transition">
+              About
+            </a>
+            <a href="app/5-shoplist/page.tsx" className="hover:text-orange-500 transition">
+              Shop
+            </a>
+            <a href="#contact" className="hover:text-orange-500 transition">
+              Contact
+            </a>
         </div>
 
         {/* Search Bar */}
