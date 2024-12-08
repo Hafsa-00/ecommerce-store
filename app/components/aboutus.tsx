@@ -1,13 +1,12 @@
 
+
 import React from "react";
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
 
-
 import aboutus1 from "../../public/images/aboutus1.png";
 import aboutus2 from "../../public/images/aboutus2.png";
 import aboutus3 from "../../public/images/aboutus3.png";
-
 
 function AboutUs() {
     return (
@@ -18,12 +17,10 @@ function AboutUs() {
                     About Us
                 </h1>
 
-
                 <h1 className="text-[20px] md:text-[50px] font-bold whitespace-nowrap md:whitespace-normal">
                     <span className="text-[#FF9F0D]">We</span> Create the Best Foody
                     Product
                 </h1>
-
 
                 <p className="text-[10px] md:text-[16px] font-normal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam
@@ -32,7 +29,6 @@ function AboutUs() {
                     sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in
                     consequat.
                 </p>
-
 
                 <ul>
                     <li className="text-[10px] md:text-[16px] font-normal mt-10 flex">
@@ -55,14 +51,12 @@ function AboutUs() {
                     </li>
                 </ul>
 
-
                 <div className="flex flex-col md:flex-row items-center md:items-start">
                     <button className="bg-[#FF9F0D] text-white w-[100px] h-[30px] md:w-[190px] md:h-[60px] rounded-[40px] mt-[32px] hover:bg-yellow-800">
                         See More
                     </button>
                 </div>
             </div>
-
 
             {/* Image Section */}
             <div className="mt-[50px] md:mt-0 ">
@@ -80,8 +74,4 @@ function AboutUs() {
     );
 }
 
-
 export default AboutUs;
-
-
-
