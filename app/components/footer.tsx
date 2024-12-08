@@ -1,3 +1,4 @@
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -205,13 +206,13 @@ const Footer = () => {
           </span>
 
           <div className="flex justify-center gap-[14px]">
-            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><FaFacebookF /></div>
-            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><FaTwitter /></div>
-            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><FaInstagram /></div>
-            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><FaYoutube /></div>
-            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><FaPinterest /></div>
+            <div className="bg-white w-[36px] h-[34px] text-black flex justify-center items-center rounded"><FaFacebookF /></div>
+            <div className="bg-white w-[36px] h-[34px] text-black  flex justify-center items-center rounded"><FaTwitter /></div>
+            <div className="bg-white w-[36px] h-[34px] text-black  flex justify-center items-center rounded"><FaInstagram /></div>
+            <div className="bg-white w-[36px] h-[34px] text-[#FF9F0D]  flex justify-center items-center rounded"><FaYoutube /></div>
+            <div className="bg-white w-[36px] h-[34px] text-black  flex justify-center items-center rounded"><FaPinterest /></div>
           </div>
-         
+      
         </div>
       
     </footer>
